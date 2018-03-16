@@ -14,6 +14,7 @@ export class AddItemPage {
 
   title: string;
   description: string;
+  deadline: string;
 
   constructor(public navCtrl: NavController, public view: ViewController) {
 
@@ -23,7 +24,8 @@ export class AddItemPage {
 
     let newItem = {
       title: this.title,
-      description: this.description
+      description: this.description,
+      deadline: this.deadline
     };
 
     this.view.dismiss(newItem);

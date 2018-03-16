@@ -14,6 +14,7 @@
 
    title;
    description;
+   deadline;
 
    constructor(public navParams: NavParams){
 
@@ -22,6 +23,7 @@
    ionViewDidLoad() {
      this.title = this.navParams.get('item').title;
      this.description = this.navParams.get('item').description;
+     this.deadline = this.navParams.get('item').deadline;
    }
 
  }

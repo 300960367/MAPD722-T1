@@ -29,8 +29,14 @@
       <ion-input type="text" [(ngModel)]="description"></ion-input>
     </ion-item>
 
+    <ion-item>
+      <ion-label floating>Deadline Date/Time</ion-label>
+      <ion-datetime displayFormat="DD/MMM/YYYY h:mm a" [(ngModel)]="deadline"></ion-datetime>
+    </ion-item>
+
   </ion-list>
 
   <button full ion-button color="secondary" (click)="saveItem()">Save</button>
+  <button full ion-button color="secondary" (click)="close()">Cancel</button>
 
 </ion-content>
